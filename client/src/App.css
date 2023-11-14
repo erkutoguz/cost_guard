@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Poppins&display=swap");
+html {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.app {
+  background-color: #343541;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+  overflow-y: scroll;
+  color: #fff;
+  background: url("./images/app-bg.jpg") no-repeat top;
+  background-size: cover;
+}
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.bg-image {
+  background: url("./images/background.jpeg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .container {
+  background-color: #fff;
+  opacity: 0.93;
+  width: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  position: absolute;
+  padding-bottom: 2rem;
+} */
+.logo {
+  margin-top: 3rem;
+  width: 170px;
+  height: 200px;
+}
+.archevolve-logo {
+  width: 480px;
+  height: 120px;
+}
+.answer-box {
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #fff;
+  color: #343541;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.answer-box > p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 750px;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  margin-top: 2rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
+
+/* .content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+} */
